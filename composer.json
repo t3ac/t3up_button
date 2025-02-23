@@ -20,14 +20,11 @@
 		"t3ac/t3up" : "^12",
 		"t3ac/t3up-image" : "^12"
 	},
-    "autoload": {
-        "psr-4": {
-            "T3ac\\T3upContainer\\": "Classes"
-        }
-    },
-	"replace" : {
-		"typo3-ter/container_example" : "self.version"
-	},
+	"autoload": {
+		"psr-4": {
+		 "T3ac\\T3upButton\\": "Classes"
+        	}
+    	},
 	"extra" : {
 		"typo3/cms" : {
 			"extension-key" : "t3up_button"
