@@ -5,10 +5,10 @@
     </meta>
     <sheets>
         <sDEF>
-            <ROOT type="array">
+            <ROOT>
                 <sheetTitle>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:sheet.layout</sheetTitle>
                 <type>array</type>
-                <el type="array">
+                <el>
 					<showtext>
 	                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.showtext</label>
 	                    <config>
