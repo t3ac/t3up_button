@@ -42,16 +42,6 @@ ExtensionManagementUtility::addTcaSelectItem(
     'after'
     );
 
-// Add to content type dropdown
-ExtensionManagementUtility::addTcaSelectItem(
-    "tt_content",
-    "CType",
-    ['Texttile', 'texttile', 'texttile_icon', 'container'],
-    'tabs',
-    'after'
-    );
-
-
 $GLOBALS['TCA']['tt_content']['types']['headerbutton']=[
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
