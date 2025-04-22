@@ -29,10 +29,4 @@ call_user_func(static function () {
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
         ['source' => 'EXT:t3up_button/Resources/Public/Icons/imagebutton_icon.svg']
         ); 
-    
-    $iconRegistry->registerIcon(
-        'texttile_icon',
-        \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        ['source' => 'EXT:t3up_button/Resources/Public/Icons/texttile_icon.svg']
-        ); 
 });
