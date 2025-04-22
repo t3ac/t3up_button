@@ -9,7 +9,7 @@
                 <sheetTitle>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:sheet.layout</sheetTitle>
                 <type>array</type>
                 <el>
-					<showtext>
+			        <showtext>
 	                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.showtext</label>
 	                    <config>
 	                        <type>select</type>
