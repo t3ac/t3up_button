@@ -16,13 +16,13 @@ call_user_func(static function () {
         'headerbutton_icon',
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
         ['source' => 'EXT:t3up_button/Resources/Public/Icons/headerbutton_icon.svg']
-   );
+   ); 
     
     $iconRegistry->registerIcon(
-        'textbutton_icon',
+        'imagebutton_icon',
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        ['source' => 'EXT:t3up_button/Resources/Public/Icons/textbutton_icon.svg']
-        );   
+        ['source' => 'EXT:t3up_button/Resources/Public/Icons/symbolbutton_icon.svg']
+        ); 
     
     $iconRegistry->registerIcon(
         'imagebutton_icon',

@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:variable name="bo" value="border-style:solid; border-width:{flexFormData.border}px;" /> 
+    
+	<f:layout name="Default"/>
+
+	<f:section name="Main">
+
+		<div class="containerbuttons d-flex w-100 align-items-stretch Item{flexFormData.items} {f:if(condition: flexFormData.spacing, then: 'spacing{flexFormData.spacing}')} {f:if(condition: flexFormData.format, then: '{flexFormData.format}')} 	{flexFormData.bordercolor}Bd round{flexFormData.round}" 
+		style="{bo}">	
+		
+			<f:for each="{childrenContent}" as="child" iteration="iterator">
+				<f:format.raw>{child.renderedContent}</f:format.raw>
+			</f:for>
+		</div>	
+	</f:section>		
+
+</html>

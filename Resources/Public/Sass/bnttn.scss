@@ -1,0 +1,480 @@
+@import '../../../../t3up/Resources/Public/Sass/_mixins';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:  768px) and (max-width:  991px){
+    .containerbuttons.Item2 > div{                                  width: $c50;
+        &:nth-child(odd)                                            {margin-left:0;}
+        &:nth-child(even)                                           {margin-right:0;}
+    }
+    .containerbuttons.Item3 > div,
+    .containerbuttons.Item4 > div,
+    .containerbuttons.Item5 > div,
+    .containerbuttons.Item6 > div{                                  width: $c33;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(3n + 1)                                         {margin-left:0;}
+        &:nth-child(3n)                                             {margin-right:0;}    
+    }
+    .containerbuttons{
+        &.Item3,
+        &.Item4,
+        &.Item5,
+        &.Item6{
+            &.spacing1 > div                                        {width: calc(#{$c33}  - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c33}  - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c33}  - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c33}  - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c33}  - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c33}  - #{$v06});}
+            &.spacing7 > div                                        {width: calc(#{$c33}  - #{$v07});}
+            &.spacing8 > div                                        {width: calc(#{$c33}  - #{$v08});}
+            &.spacing9 > div                                        {width: calc(#{$c33}  - #{$v09});}
+            &.spacing10 > div                                       {width: calc(#{$c33}  - #{$v10});}  
+            
+        }
+    } 
+}
+
+@media screen and (min-width:  992px){
+    .containerbuttons.Item2 > div{                                  width: $c50;
+        &:nth-child(odd)                                            {margin-left:0;}
+        &:nth-child(even)                                           {margin-right:0;}
+    }
+    .containerbuttons.Item3 > div{                                  width: $c33;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(3n + 1)                                         {margin-left:0;}
+        &:nth-child(3n)                                             {margin-right:0;}    
+    }
+    .containerbuttons.Item4 > .containerbutton{                     width: $c25;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(4n + 1)                                         {margin-left:0;}
+        &:nth-child(4n)                                             {margin-right:0;}
+    }
+    .containerbuttons.Item5 > .containerbutton{                     width: $c20;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(5n + 1)                                         {margin-left:0;}
+        &:nth-child(5n + 5)                                         {margin-right:0;}
+    }
+    .containerbuttons.Item6 > .containerbutton{                     width: $c16;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(6n + 1)                                         {margin-left:0;}
+        &:nth-child(6n)                                             {margin-right:0;}
+    }
+    .containerbuttons{
+        
+        &.Item2{
+            &.spacing1 > div                                        {width: calc(#{$c50} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c50} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c50} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c50} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c50} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c50} - #{$v06});}
+            &.spacing7 > div                                        {width: calc(#{$c50} - #{$v07});}
+            &.spacing8 > div                                        {width: calc(#{$c50} - #{$v08});}
+            &.spacing9 > div                                        {width: calc(#{$c50} - #{$v09});}
+            &.spacing10 > div                                       {width: calc(#{$c50} - #{$v1});}            
+            
+        } 
+        
+        &.Item3{
+            &.spacing1 > div                                        {width: calc(#{$c33} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c33} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c33} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c33} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c33} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c33} - #{$v06});}
+            &.spacing7 > div                                        {width: calc(#{$c33} - #{$v07});}
+            &.spacing8 > div                                        {width: calc(#{$c33} - #{$v08});}
+            &.spacing9 > div                                        {width: calc(#{$c33} - #{$v09});}
+            &.spacing10 > div                                       {width: calc(#{$c33} - #{$v14});}         
+        } 
+        
+        &.Item4{
+            &.spacing1 > div                                        {width: calc(#{$c25} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c25} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c25} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c25} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c25} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c25} - #{$v06});}
+            &.spacing7 > div                                        {width: calc(#{$c25} - #{$v01});}
+            &.spacing8 > div                                        {width: calc(#{$c25} - #{$v01});}
+            &.spacing9 > div                                        {width: calc(#{$c25} - #{$v01});}
+            &.spacing10 > div                                       {width: calc(#{$c25} - #{$v01});}            
+        } 
+        
+        &.Item5{
+            &.spacing1 > div                                        {width: calc(#{$c20} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c20} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c20} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c20} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c20} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c20} - #{$v06});}
+            &.spacing7 > div                                        {width: calc(#{$c20} - #{$v03});}
+            &.spacing8 > div                                        {width: calc(#{$c20} - #{$v04});}
+            &.spacing9 > div                                        {width: calc(#{$c20} - #{$v05});}
+            &.spacing10 > div                                       {width: calc(#{$c20} - #{$v06});}            
+        } 
+        
+        &.Item6{
+            &.spacing1 > div                                        {width: calc(#{$c16} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c16} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c16} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c16} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c16} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c16} - #{$v06});}
+            &.spacing7 > div                                        {width: calc(#{$c16} - #{$v03});}
+            &.spacing8 > div                                        {width: calc(#{$c16} - #{$v04});}
+            &.spacing9 > div                                        {width: calc(#{$c16} - #{$v05});}
+            &.spacing10 > div                                        {width: calc(#{$c16} - #{$v06});}            
+        } 
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons **************************************************************************************************************************************************************************************************************************/
+
+
+.containerbuttons .containerbutton:hover                           {box-shadow: $shadow; transform: scale(101%); }
+.containerbuttons.circ  .containerbutton:hover                     {box-shadow: none;} 
+
+.containerbuttons{                                                 flex-wrap: wrap;
+    &.padding1  > div > div > div                                  {@include p01;}
+    &.padding2  > div > div > div                                  {@include p02;}
+    &.padding3  > div > div > div                                  {@include p03;}
+    &.padding4  > div > div > div                                  {@include p04;}
+    &.padding5  > div > div > div                                  {@include p05;}
+    &.padding6  > div > div > div                                  {@include p06;}  
+    &.padding7  > div > div > div                                  {@include p07;}
+    &.padding8  > div > div > div                                  {@include p08;}
+    &.padding9  > div > div > div                                  {@include p09;}
+    &.padding10 > div > div > div                                  {@include p1;}
+    &.padding11 > div > div > div                                  {@include p15;}
+    &.padding12 > div > div > div                                  {@include p2;}
+        
+    
+    .containerbutton{                                               overflow: hidden; transition: all ease .3s;
+        > .containerbuttonInnen                                     {display: flex; padding: 0; transition: all ease .3s;  position: relative;}
+        > .containerbuttonInnen > * > *,
+        > .containerbuttonInnen > * > a                             {color: inherit;}
+        &.roundtrue > .containerbuttonInnen                         {border-radius: $v05; overflow: hidden;}
+
+        > .containerbuttonInnen.text-center     *                   {text-align: center !important}
+        > .containerbuttonInnen.text-end     *                      {text-align: right !important}
+        
+    }
+    
+    &.xxxxxxb > .containerbutton{                                   aspect-ratio: 8 / 1;}    
+    &.xxxxxb > .containerbutton{                                    aspect-ratio: 7 / 1;}    
+    &.xxxxb > .containerbutton{                                     aspect-ratio: 6 / 1;}    
+    &.xxxb > .containerbutton{                                      aspect-ratio: 5 / 1;}     
+    &.xxb > .containerbutton{                                       aspect-ratio: 4 / 1;}
+    &.xb > .containerbutton{                                        aspect-ratio: 3 / 1;}
+    &.cs > .containerbutton{                                        aspect-ratio: 21 / 9;}      
+    &.wd > .containerbutton{                                        aspect-ratio: 2 / 1;}   
+    &.sq > .containerbutton{                                        aspect-ratio: 1 / 1;}
+    &.md > .containerbutton{                                        aspect-ratio: 4 / 3;}
+    &.tv > .containerbutton{                                        aspect-ratio: 16 / 9;}     
+    &.sq&.circ > .containerbutton > .containerbuttonInnen           {border-radius: 50%;}
+   
+      
+    .containerbutton{                                         
+        > .containerbuttonInnen .frame-imagebutton{                 position: relative; overflow: hidden; 
+            img                                                     {width: 100%; height: 100%; object-fit: cover; object-position: center 0;}
+
+            .imageitemtitle                                         {transition: all ease .3s;}
+            .imageitemtitle.start                                   {position: absolute;}
+            .imageitemtitle.end                                     {position: absolute;}
+            
+            a.showlayer picture span                                {z-index: 17; text-align: center; transition: all ease .3s; color: $pictureoverlayTextColor; position: absolute; width: 100%; height: 100%; top: -100%; display: flex; align-items: center; justify-content: center;  background-color: $pictureoverlay;}
+            a.showlayer:focus, 
+            a.showlayer:hover picture span                          {top: 0;}
+            a.showlayer:focus .imageitemtitle, 
+            a.showlayer:hover .imageitemtitle                       {color: transparent !important;}
+        }
+    }
+}
+
+.containerbuttons{
+    &.spacing1 > div                                                {@include mx01; @include mb02;}
+    &.spacing2 > div                                                {@include mx02; @include mb04;}
+    &.spacing3 > div                                                {@include mx03; @include mb06;}
+    &.spacing4 > div                                                {@include mx04; @include mb08;}
+    &.spacing5 > div                                                {@include mx05; @include mb1; }
+    &.spacing6 > div                                                {@include mx06; @include mb12;}   
+}
+
+.containerbuttons.Item1 > div                                       {width: $c100; margin-left:0; margin-right:0;}
+
+@media screen and (max-width:  767px){
+    .containerbuttons.Item2 > div,    
+    .containerbuttons.Item3 > div,
+    .containerbuttons.Item4 > div,
+    .containerbuttons.Item5 > div,
+    .containerbuttons.Item6 > div{                                  width: $c50;
+        &:nth-child(odd)                                            {margin-left:0;}
+        &:nth-child(even)                                           {margin-right:0;}
+    }
+}
+
+.containerbuttons{
+    &.Item2,
+    &.Item3,
+    &.Item4,
+    &.Item5,
+    &.Item6{
+        &.spacing1 > div                                           {width: calc(#{$c50}  - #{$v01});}
+        &.spacing2 > div                                           {width: calc(#{$c50}  - #{$v02});}
+        &.spacing3 > div                                           {width: calc(#{$c50}  - #{$v03});}
+        &.spacing4 > div                                           {width: calc(#{$c50}  - #{$v04});}
+        &.spacing5 > div                                           {width: calc(#{$c50}  - #{$v05});}
+        &.spacing6 > div                                           {width: calc(#{$c50}  - #{$v06});}
+    }
+} 
+
+
+@media screen and (min-width:  768px) and (max-width:  991px){
+    .containerbuttons.Item2 > div{                                  width: $c50;
+        &:nth-child(odd)                                            {margin-left:0;}
+        &:nth-child(even)                                           {margin-right:0;}
+    }
+    .containerbuttons.Item3 > div,
+    .containerbuttons.Item4 > div,
+    .containerbuttons.Item5 > div,
+    .containerbuttons.Item6 > div{                                  width: $c33;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(3n + 1)                                         {margin-left:0;}
+        &:nth-child(3n)                                             {margin-right:0;}    
+    }
+    .containerbuttons{
+        &.Item3,
+        &.Item4,
+        &.Item5,
+        &.Item6{
+            &.spacing1 > div                                        {width: calc(#{$c33}  - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c33}  - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c33}  - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c33}  - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c33}  - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c33}  - #{$v06});}
+        }
+    } 
+}
+
+@media screen and (min-width:  992px){
+    .containerbuttons.Item2 > div{                                  width: $c50;
+        &:nth-child(odd)                                            {margin-left:0;}
+        &:nth-child(even)                                           {margin-right:0;}
+    }
+    .containerbuttons.Item3 > div{                                  width: $c33;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(3n + 1)                                         {margin-left:0;}
+        &:nth-child(3n)                                             {margin-right:0;}    
+    }
+    .containerbuttons.Item4 > .containerbutton{                     width: $c25;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(4n + 1)                                         {margin-left:0;}
+        &:nth-child(4n)                                             {margin-right:0;}
+    }
+    .containerbuttons.Item5 > .containerbutton{                     width: $c20;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(5n + 1)                                         {margin-left:0;}
+        &:nth-child(5n + 5)                                         {margin-right:0;}
+    }
+    .containerbuttons.Item6 > .containerbutton{                     width: $c16;
+        &:first-of-type                                             {margin-left:0;}
+        &:nth-child(6n + 1)                                         {margin-left:0;}
+        &:nth-child(6n)                                             {margin-right:0;}
+    }
+    .containerbuttons{
+        
+        &.Item2{
+            &.spacing1 > div                                        {width: calc(#{$c50} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c50} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c50} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c50} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c50} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c50} - #{$v06});}
+        } 
+        
+        &.Item3{
+            &.spacing1 > div                                        {width: calc(#{$c33} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c33} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c33} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c33} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c33} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c33} - #{$v06});}
+        } 
+        
+        &.Item4{
+            &.spacing1 > div                                        {width: calc(#{$c25} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c25} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c25} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c25} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c25} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c25} - #{$v06});}
+        } 
+        
+        &.Item5{
+            &.spacing1 > div                                        {width: calc(#{$c20} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c20} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c20} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c20} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c20} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c20} - #{$v06});}
+        } 
+        
+        &.Item6{
+            &.spacing1 > div                                        {width: calc(#{$c16} - #{$v01});}
+            &.spacing2 > div                                        {width: calc(#{$c16} - #{$v02});}
+            &.spacing3 > div                                        {width: calc(#{$c16} - #{$v03});}
+            &.spacing4 > div                                        {width: calc(#{$c16} - #{$v04});}
+            &.spacing5 > div                                        {width: calc(#{$c16} - #{$v05});}
+            &.spacing6 > div                                        {width: calc(#{$c16} - #{$v06});}
+        } 
+    } 
+}
+
+
+
+/* DESIGN */
+.containerbuttonInnen {
+    
+     &.BasicColorBg   {background: $basicColor} 
+     &.BlackBg        {background: $black}          
+     &.BlueBg         {background: $blue}     
+     &.DarkblueBg     {background: $darkblue}
+     &.DarkgreyBg     {background: $darkgrey}  
+     &.DarkergreyBg   {background: $darkergrey}       
+     &.GreyBg         {background: $grey}            
+     &.GreenBg        {background: $green}   
+     &.LightgreyBg    {background: $lightgrey}       
+     &.OrangeBg       {background: $orange}       
+     &.RedBg          {background: $red}  
+     &.TurquoiseBg    {background: $turquoise}          
+     &.WhiteBg        {background: $white}
+
+     &.BasicColorBd   {border-color: $basicColor} 
+     &.BlackBd        {border-color: $black}          
+     &.BlueBd         {border-color: $blue}     
+     &.DarkblueBd     {border-color: $darkblue}
+     &.DarkgreyBd     {border-color: $darkgrey}  
+     &.DarkergreyBd   {border-color: $darkergrey}       
+     &.GreyBd         {border-color: $grey}            
+     &.GreenBd        {border-color: $green}   
+     &.LightgreyBd    {border-color: $lightgrey}       
+     &.OrangeBd       {border-color: $orange}       
+     &.RedBd          {border-color: $red}  
+     &.TurquoiseBd    {border-color: $turquoise}          
+     &.WhiteBd        {border-color: $white}
+
+     .frame-headerbutton span.BasicColor   {color: $basicColor} 
+     .frame-headerbutton span.Black        {color: $black}          
+     .frame-headerbutton span.Blue         {color: $blue}     
+     .frame-headerbutton span.Darkblue     {color: $darkblue}
+     .frame-headerbutton span.Darkgrey     {color: $darkgrey}  
+     .frame-headerbutton span.Darkergrey   {color: $darkergrey}       
+     .frame-headerbutton span.Grey         {color: $grey}            
+     .frame-headerbutton span.Green        {color: $green}   
+     .frame-headerbutton span.Lightgrey    {color: $lightgrey}       
+     .frame-headerbutton span.Orange       {color: $orange}       
+     .frame-headerbutton span.Red          {color: $red}  
+     .frame-headerbutton span.Turquoise    {color: $turquoise}          
+     .frame-headerbutton span.White        {color: $white}
+
+}
+    
+
+
+
+
+
+
+
+
+
+

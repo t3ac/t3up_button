@@ -1,0 +1,29 @@
+mod.wizards.newContentElement.wizardItems {
+    container.elements {
+        headerbutton {
+            iconIdentifier = headerbutton_icon
+            title = Headerbutton
+            description = LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:headerbuttonDes
+            tt_content_defValues {
+                CType = headerbutton
+            }
+        }  
+        symbolbutton {
+            iconIdentifier = symbolbutton_icon
+            title = Symbolbutton
+            description = LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:symbolbuttonDes
+            tt_content_defValues {
+                CType = symbolbutton
+            }
+        } 
+        imagebutton {
+            iconIdentifier = imagebutton_icon
+            title = Imagebutton
+            description = LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:imagebuttonDes
+            tt_content_defValues {
+                CType = imagebutton
+            }
+        }    
+    }
+     container.show := addToList(headerbutton,imagebutton,symbolbutton)
+}

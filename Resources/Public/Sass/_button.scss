@@ -1,0 +1,306 @@
+@import '../../../../t3up/Resources/Public/Sass/_mixins';
+
+/* Buttons **************************************************************************************************************************************************************************************************************************/
+
+.containerbuttons       .containerbutton:hover                     {box-shadow: $shadow; transform: scale(101%); }
+.containerbuttons.circ  .containerbutton:hover                     {box-shadow: none;} 
+
+.containerbuttons{                                                 flex-wrap: wrap;    
+  
+    &.xxxxxxb > div                                                {aspect-ratio: 8 / 1;}    
+    &.xxxxxb > div                                                 {aspect-ratio: 7 / 1;}    
+    &.xxxxb > div                                                  {aspect-ratio: 6 / 1;}    
+    &.xxxb > div                                                   {aspect-ratio: 5 / 1;}     
+    &.xxb > div                                                    {aspect-ratio: 4 / 1;}
+    &.xb > div                                                     {aspect-ratio: 3 / 1;}
+    &.cs > div                                                     {aspect-ratio: 21 / 9;}   	
+    &.wd > div                                                     {aspect-ratio: 2 / 1;}  	
+    &.sq > div                                                     {aspect-ratio: 1 / 1;}
+    &.md > div                                                     {aspect-ratio: 4 / 3;}
+    &.tv > div                                                     {aspect-ratio: 16 / 9;}     
+    &.sq&.circ > div                                               {border-radius: 50%;}
+    &.roundtrue > div                                              {border-radius: $v05; overflow: hidden;}
+    
+    
+    .frame-headerbutton,
+    .frame-imagebutton,
+    .frame-symbolbutton{                                            @include p05;
+        .text-align-center                                          {text-align: center;}
+        .text-align-right                                           {text-align: right;}
+        .text-align-left                                            {text-align: left;}        
+     }          
+     
+     .frame-headerbutton,
+    .frame-imagebutton{
+        span.h1                                                     {font-size: $v4; font-weight: bold;}  
+        span.h2                                                     {font-size: $v3; font-weight: bold;}   
+        span.h3                                                     {font-size: $v2; font-weight: bold;}  
+        span.h4                                                     {font-size: $v1; font-weight: bold;}       
+     }             
+     
+    .frame-symbolbutton{       
+         span.h1                                                     {font-size: $v9; font-weight: bold;} 
+         span.h2                                                     {font-size: $v8; font-weight: bold;} 
+         span.h3                                                     {font-size: $v7; font-weight: bold;}   
+         span.h4                                                     {font-size: $v6; font-weight: bold;}   
+         span.h5                                                     {font-size: $v5; font-weight: bold;}  
+         span.h6                                                     {font-size: $v4; font-weight: bold;}  
+         span.h7                                                     {font-size: $v3; font-weight: bold;}   
+         span.h8                                                     {font-size: $v2; font-weight: bold;}  
+         span.h9                                                     {font-size: $v1; font-weight: bold;}  
+     }
+     
+     .frame-imagebutton{                                            @include p0;
+        img                                                         {width: 100%; height: 100%; object-fit: cover; transition: all ease .3s;} 
+        img:hover                                                   {scale: 1.05;} 
+     }   
+      
+}
+
+.containerbuttons{
+    &.spacing1 > div                                                {@include mx01; @include mb02;}
+    &.spacing2 > div                                                {@include mx02; @include mb04;}
+    &.spacing3 > div                                                {@include mx03; @include mb06;}
+    &.spacing4 > div                                                {@include mx04; @include mb08;}
+    &.spacing5 > div                                                {@include mx05; @include mb1; }
+    &.spacing6 > div                                                {@include mx06; @include mb12;}   
+    &.spacing7 > div                                                {@include mx07; @include mb14;}
+    &.spacing8 > div                                                {@include mx08; @include mb16;}
+    &.spacing9 > div                                                {@include mx09; @include mb18;}
+    &.spacing10 > div                                               {@include mx1;  @include mb2;}   
+}
+
+@media screen and (max-width:  359px){
+    .containerbuttons.Item1 > div,                                       
+    .containerbuttons.Item2 > div,
+    .containerbuttons.Item3 > div,
+    .containerbuttons.Item4 > div,
+    .containerbuttons.Item5 > div,
+    .containerbuttons.Item6 > div                                   {width: $c100; margin-left:0; margin-right:0;}
+}
+
+
+@media screen and (min-width: 360px){
+  .containerbuttons{
+        &.Item2,
+        &.Item3,
+        &.Item4,
+        &.Item5,
+        &.Item6{
+            &.spacing1  > div                                           {width: calc(#{$c50}  - #{$v01});}
+            &.spacing2  > div                                           {width: calc(#{$c50}  - #{$v02});}
+            &.spacing3  > div                                           {width: calc(#{$c50}  - #{$v03});}
+            &.spacing4  > div                                           {width: calc(#{$c50}  - #{$v04});}
+            &.spacing5  > div                                           {width: calc(#{$c50}  - #{$v05});}
+            &.spacing6  > div                                           {width: calc(#{$c50}  - #{$v06});}
+            &.spacing7  > div                                           {width: calc(#{$c50}  - #{$v07});}
+            &.spacing8  > div                                           {width: calc(#{$c50}  - #{$v08});}
+            &.spacing9  > div                                           {width: calc(#{$c50}  - #{$v09});}
+            &.spacing10 > div                                           {width: calc(#{$c50}  - #{$v1});}    
+        }
+    }     
+}
+
+@media screen and (max-width: 581px){
+    .containerbuttons{
+          &.Item2,
+          &.Item3,
+          &.Item4,
+          &.Item5,
+          &.Item6{
+              > div{                
+                 &:nth-child(odd)                                       {margin-left:0;}
+                 &:nth-child(even)                                      {margin-right:0;}
+             }
+         }
+     }
+}     
+
+@media screen and (min-width: 582px) {
+    .containerbuttons{
+        &.Item2 {
+              > div{                
+                 &:nth-child(odd)                                       {margin-left:0;}
+                 &:nth-child(even)                                      {margin-right:0;}
+             }            
+        }
+        &.Item3,
+        &.Item4,
+        &.Item5,
+        &.Item6{
+            &.spacing1  > div                                           {width: calc(#{$c33}  - #{$v02});}
+            &.spacing2  > div                                           {width: calc(#{$c33}  - #{$v03});}
+            &.spacing3  > div                                           {width: calc(#{$c33}  - #{$v04});}
+            &.spacing4  > div                                           {width: calc(#{$c33}  - #{$v06});}
+            &.spacing5  > div                                           {width: calc(#{$c33}  - #{$v07});}
+            &.spacing6  > div                                           {width: calc(#{$c33}  - #{$v09});}
+            &.spacing7  > div                                           {width: calc(#{$c33}  - #{$v1});}
+            &.spacing8  > div                                           {width: calc(#{$c33}  - #{$v11});}
+            &.spacing9  > div                                           {width: calc(#{$c33}  - #{$v12});}
+            &.spacing10 > div                                           {width: calc(#{$c33}  - #{$v14});}      
+        }
+    }
+} 
+
+@media screen and (min-width: 582px) and (max-width: 767px){
+    .containerbuttons{
+          &.Item3,
+          &.Item4,
+          &.Item5,
+          &.Item6{
+              > div{                
+                &:first-of-type                                         {margin-left:0;}
+                &:nth-child(3n + 1)                                     {margin-left:0;}
+                &:nth-child(3n)                                         {margin-right:0;}    
+             }
+         }
+     }
+}   
+
+@media screen and (min-width: 768px) {
+    .containerbuttons{
+         &.Item3{
+             > div{                
+               &:first-of-type                                         {margin-left:0;}
+               &:nth-child(3n + 1)                                     {margin-left:0;}
+               &:nth-child(3n)                                         {margin-right:0;}    
+            }
+        } 
+        &.Item4,
+        &.Item5,
+        &.Item6{
+            &.spacing1  > div                                           {width: calc(#{$c25}  - #{$v02});}
+            &.spacing2  > div                                           {width: calc(#{$c25}  - #{$v03});}
+            &.spacing3  > div                                           {width: calc(#{$c25}  - #{$v05});}
+            &.spacing4  > div                                           {width: calc(#{$c25}  - #{$v06});}
+            &.spacing5  > div                                           {width: calc(#{$c25}  - #{$v08});}
+            &.spacing6  > div                                           {width: calc(#{$c25}  - #{$v09});}
+            &.spacing7  > div                                           {width: calc(#{$c25}  - #{$v11});}
+            &.spacing8  > div                                           {width: calc(#{$c25}  - #{$v12});}
+            &.spacing9  > div                                           {width: calc(#{$c25}  - #{$v14});}
+            &.spacing10 > div                                           {width: calc(#{$c25}  - #{$v15});}      
+        }
+    }
+} 
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .containerbuttons{
+          &.Item4,
+          &.Item5,
+          &.Item6{
+              > div{                
+                &:first-of-type                                         {margin-left: 0;}
+                &:nth-child(4n + 1)                                     {margin-left: 0;}
+                &:nth-child(4n)                                         {margin-right:0;}    
+             }
+         }
+     }
+}   
+
+@media screen and (min-width: 992px) {
+    .containerbuttons{
+         &.Item4{
+             > div{                
+               &:first-of-type                                         {margin-left: 0;}
+               &:nth-child(4n + 1)                                     {margin-left: 0;}
+               &:nth-child(4n)                                         {margin-right:0;}    
+            }
+        }
+        &.Item5{
+            &.spacing1  > div                                           {width: calc(#{$c20}  - #{$v02});}
+            &.spacing2  > div                                           {width: calc(#{$c20}  - #{$v04});}
+            &.spacing3  > div                                           {width: calc(#{$c20}  - #{$v05});}
+            &.spacing4  > div                                           {width: calc(#{$c20}  - #{$v07});}
+            &.spacing5  > div                                           {width: calc(#{$c20}  - #{$v08});}
+            &.spacing6  > div                                           {width: calc(#{$c20}  - #{$v1});}
+            &.spacing7  > div                                           {width: calc(#{$c20}  - #{$v12});}
+            &.spacing8  > div                                           {width: calc(#{$c20}  - #{$v13});}
+            &.spacing9  > div                                           {width: calc(#{$c20}  - #{$v15});}
+            &.spacing10 > div                                           {width: calc(#{$c20}  - #{$v16});}    
+            
+            > div{                
+                   &:first-of-type                                      {margin-left: 0;}
+                   &:nth-child(5n + 1)                                  {margin-left: 0;}
+                   &:nth-child(5n)                                      {margin-right:0;}    
+            }  
+        }
+        &.Item6{
+            &.spacing1  > div                                           {width: calc(#{$c16}  - #{$v02});}
+            &.spacing2  > div                                           {width: calc(#{$c16}  - #{$v04});}
+            &.spacing3  > div                                           {width: calc(#{$c16}  - #{$v05});}
+            &.spacing4  > div                                           {width: calc(#{$c16}  - #{$v07});}
+            &.spacing5  > div                                           {width: calc(#{$c16}  - #{$v09});}
+            &.spacing6  > div                                           {width: calc(#{$c16}  - #{$v11});}
+            &.spacing7  > div                                           {width: calc(#{$c16}  - #{$v12});}
+            &.spacing8  > div                                           {width: calc(#{$c16}  - #{$v14});}
+            &.spacing9  > div                                           {width: calc(#{$c16}  - #{$v15});}
+            &.spacing10 > div                                           {width: calc(#{$c16}  - #{$v17});}    
+            
+            > div{                
+                   &:first-of-type                                      {margin-left: 0;}
+                   &:nth-child(6n + 1)                                  {margin-left: 0;}
+                   &:nth-child(6n)                                      {margin-right:0;}    
+            }  
+        } 
+    }
+} 
+
+
+/* DESIGN */
+
+.containerbuttons {
+    &.BasicColorBd   {border-color: $basicColor} 
+    &.BlackBd        {border-color: $black}          
+    &.BlueBd         {border-color: $blue}     
+    &.DarkblueBd     {border-color: $darkblue}
+    &.DarkgreyBd     {border-color: $darkgrey}  
+    &.DarkergreyBd   {border-color: $darkergrey}       
+    &.GreyBd         {border-color: $grey}            
+    &.GreenBd        {border-color: $green}   
+    &.LightgreyBd    {border-color: $lightgrey}       
+    &.OrangeBd       {border-color: $orange}       
+    &.RedBd          {border-color: $red}  
+    &.TurquoiseBd    {border-color: $turquoise}          
+    &.WhiteBd        {border-color: $white}
+    
+    > .BasicColorBg   {background: $basicColor} 
+    > .BlackBg        {background: $black}          
+    > .BlueBg         {background: $blue}     
+    > .DarkblueBg     {background: $darkblue}
+    > .DarkgreyBg     {background: $darkgrey}  
+    > .DarkergreyBg   {background: $darkergrey}       
+    > .GreyBg         {background: $grey}            
+    > .GreenBg        {background: $green}   
+    > .LightgreyBg    {background: $lightgrey}       
+    > .OrangeBg       {background: $orange}       
+    > .RedBg          {background: $red}  
+    > .TurquoiseBg    {background: $turquoise}          
+    > .WhiteBg        {background: $white}
+    
+
+     .BasicColor   {color: $basicColor} 
+     .Black        {color: $black}          
+     .Blue         {color: $blue}     
+     .Darkblue     {color: $darkblue}
+     .Darkgrey     {color: $darkgrey}  
+     .Darkergrey   {color: $darkergrey}       
+     .Grey         {color: $grey}            
+     .Green        {color: $green}   
+     .Lightgrey    {color: $lightgrey}       
+     .Orange       {color: $orange}       
+     .Red          {color: $red}  
+     .Turquoise    {color: $turquoise}          
+     .White        {color: $white}
+    
+}
+
+
+
+
+
+
+
+
+
+

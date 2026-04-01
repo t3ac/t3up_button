@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_button">
+    <header/>
+        <body>
+
+
+             /* Button classes */             
+            <trans-unit id="label.items" xml:space="preserve">
+                 <source>Items in a row</source>
+                 <target state="translated">Elemente in einer Reihe</target>
+            </trans-unit>  
+            <trans-unit id="label.1item" xml:space="preserve">
+                 <source>One Item</source>
+                  <target state="translated">Ein Element</target>
+            </trans-unit>              
+             <trans-unit id="label.2items" xml:space="preserve">
+                 <source>Two Items</source>
+                  <target state="translated">Zwei Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.3items" xml:space="preserve">
+                 <source>Three Items</source>
+                  <target state="translated">Drei Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.4items" xml:space="preserve">
+                 <source>Four Items</source>
+                  <target state="translated">Vier Elemente</target>
+            </trans-unit>  
+             <trans-unit id="label.5items" xml:space="preserve">
+                 <source>Five Items</source>
+                  <target state="translated">Fünf Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.6items" xml:space="preserve">
+                 <source>Six Items</source>
+                  <target state="translated">Sechs Elemente</target>
+            </trans-unit>          
+             <trans-unit id="label.7items" xml:space="preserve">
+                 <source>Seven Items</source>
+                  <target state="translated">Sieben Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.8items" xml:space="preserve">
+                 <source>Eight Items</source>
+                  <target state="translated">Acht Elemente</target>
+            </trans-unit> 
+
+            <trans-unit id="label.interspace" xml:space="preserve">
+                  <source>Interspace (default: 10 i.e. 1.0vw)</source>
+                  <target state="translated">Zwischenräume (Vorgabe: 10 entspricht 1.0vw)</target>
+            </trans-unit> 
+            <trans-unit id="label.bgcolor" xml:space="preserve">
+                 <source>Backgroundcolor</source>
+                  <target state="translated">Hintergrundfarbe</target>
+            </trans-unit> 
+            <trans-unit id="label.format" xml:space="preserve">
+                 <source>Format</source>
+                  <target state="translated">Format</target>
+            </trans-unit> 
+            <trans-unit id="label.format0" xml:space="preserve">
+                 <source>None</source>
+                  <target state="translated">Ohne</target>
+            </trans-unit>               
+            <trans-unit id="label.format1" xml:space="preserve">
+                 <source>Square</source>
+                  <target state="translated">Quadrat</target>
+            </trans-unit>                                                                                                
+            <trans-unit id="label.format2" xml:space="preserve">
+                 <source>circle</source>
+                  <target state="translated">Kreis</target>
+            </trans-unit>   
+            <trans-unit id="label.format3" xml:space="preserve">
+                 <source>wide 4:1</source>
+                 <target state="translated">breit 4:1</target>
+            </trans-unit>              
+            <trans-unit id="label.format4" xml:space="preserve">
+                 <source>wide 3:1</source>
+                 <target state="translated">breit 3:1</target>
+            </trans-unit>                
+            <trans-unit id="label.format5" xml:space="preserve">
+                 <source>wide 21:9</source>
+                 <target state="translated">Cinema 21:9</target>                 
+            </trans-unit>                
+            <trans-unit id="label.format6" xml:space="preserve">
+                 <source>wide 2:1</source>
+                 <target state="translated">breit 2:1</target>
+            </trans-unit>                            
+            <trans-unit id="label.format7" xml:space="preserve">
+                 <source>TV</source>
+                 <target state="translated">TV 16:9</target>
+            </trans-unit>              
+            <trans-unit id="label.format8" xml:space="preserve">
+                 <source>wide</source>
+                  <target state="translated">breit 4:3</target>
+            </trans-unit>                                                                              
+             <trans-unit id="label.format9" xml:space="preserve">
+                 <source>wide 5:1</source>
+                  <target state="translated">breit 5:1</target>
+            </trans-unit>                  
+            <trans-unit id="label.format10" xml:space="preserve">
+                 <source>wide 6:1</source>
+                  <target state="translated">breit 6:1</target>
+            </trans-unit>    
+             <trans-unit id="label.format11" xml:space="preserve">
+                 <source>wide 7:1</source>
+                  <target state="translated">breit 7:1</target>
+            </trans-unit>                  
+            <trans-unit id="label.format12" xml:space="preserve">
+                 <source>wide 8:1</source>
+                  <target state="translated">breit 8:1</target>
+            </trans-unit>                                                                                                 
+            <trans-unit id="label.round" xml:space="preserve">
+                 <source>Round corner</source>
+                  <target state="translated">Runde Ecken</target>
+            </trans-unit>  
+            <trans-unit id="label.color" xml:space="preserve">
+                 <source>Textcolor</source>
+                  <target state="translated">Textfarbe</target>
+            </trans-unit>  
+            <trans-unit id="label.border" xml:space="preserve">
+                 <source>Border thickness (in px)</source>
+                  <target state="translated">Rahmendicke (in px)</target>
+            </trans-unit>  
+            <trans-unit id="label.bordercolor" xml:space="preserve">
+                 <source>Bordercolor</source>
+                  <target state="translated">Rahmenfarbe</target>
+            </trans-unit>  
+
+
+               /* Buttons */           
+             <trans-unit id="label.textalign" xml:space="preserve">
+                 <source>Textalign</source>
+                  <target state="translated">Textausrichtung</target>                
+            </trans-unit>    
+             <trans-unit id="label.showtext" xml:space="preserve">
+                 <source>Show text</source>
+                  <target state="translated">Text anzeigen</target>                
+            </trans-unit>            
+             <trans-unit id="label.headersize" xml:space="preserve">
+                 <source>Size of the header</source>
+                  <target state="translated">Textgröße</target>      
+            </trans-unit>   
+            <trans-unit id="label.start" xml:space="preserve">
+                <source>left</source>
+                <target state="translated">links</target>   
+            </trans-unit>
+            <trans-unit id="label.center" xml:space="preserve">
+                <source>center</source>
+                  <target state="translated">zentriert</target>   
+            </trans-unit>
+            <trans-unit id="label.end" xml:space="preserve">
+                <source>right</source>
+                   <target state="translated">rechts</target>               
+            </trans-unit>
+             <trans-unit id="label.valign" xml:space="preserve">
+                 <source>Vertical align</source>
+                 <target state="translated">Vertikale Ausrichtung</target>                    
+            </trans-unit>  
+            <trans-unit id="label.top" xml:space="preserve">
+                <source>top</source>
+                 <target state="translated">oben</target>                 
+            </trans-unit>            
+            <trans-unit id="label.bottom" xml:space="preserve">
+                  <source>bottom</source>            
+                 <target state="translated">unten</target>     
+            </trans-unit>
+            <trans-unit id="label.upper" xml:space="preserve">
+                <source>above</source>
+                 <target state="translated">darüber</target>                     
+            </trans-unit>            
+            <trans-unit id="label.under" xml:space="preserve">
+                <source>below</source>
+                <target state="translated">darunter</target>                      
+            </trans-unit>
+            
+
+            /* Design */
+             <trans-unit id="label.white" xml:space="preserve">
+                 <source>White</source>
+                 <target state="translated">Weiß</target>  
+            </trans-unit>   
+             <trans-unit id="label.lightgrey" xml:space="preserve">
+                 <source>Lightgrey</source>
+                   <target state="translated">Hellgrau</target>  
+            </trans-unit>          
+             <trans-unit id="label.grey" xml:space="preserve">
+                 <source>Grey</source>
+                   <target state="translated">Grau</target>  
+            </trans-unit> 
+             <trans-unit id="label.darkergrey" xml:space="preserve">
+                 <source>Darker grey</source>
+                   <target state="translated">Dunkleres grau</target>  
+            </trans-unit> 
+             <trans-unit id="label.darkgrey" xml:space="preserve">
+                 <source>Dark grey</source>
+                   <target state="translated">Dunkelgrau</target>  
+            </trans-unit>             
+             <trans-unit id="label.black" xml:space="preserve">
+                 <source>Black</source>
+                   <target state="translated">Schwarz</target>  
+            </trans-unit> 
+             <trans-unit id="label.blue" xml:space="preserve">
+                 <source>Blue</source>
+                   <target state="translated">Blau</target>  
+            </trans-unit> 
+             <trans-unit id="label.darkblue" xml:space="preserve">
+                 <source>Darker blue</source>
+                   <target state="translated">Dunkelblau</target>  
+            </trans-unit> 
+             <trans-unit id="label.turquoise" xml:space="preserve">
+                 <source>Turquoise</source>
+                   <target state="translated">Türkis</target>  
+            </trans-unit>             
+              <trans-unit id="label.green" xml:space="preserve">
+                 <source>Green</source>
+                   <target state="translated">Grün</target>  
+            </trans-unit>
+             <trans-unit id="label.violett" xml:space="preserve">
+                 <source>Violett</source>
+                   <target state="translated">Violett</target>  
+            </trans-unit> 
+             <trans-unit id="label.orange" xml:space="preserve">
+                 <source>Orange</source>
+                   <target state="translated">Orange</target>  
+            </trans-unit>             
+             <trans-unit id="label.basecolor" xml:space="preserve">
+                   <source>Basecolor</source>
+                   <target state="translated">Basisfarbe</target>  
+            </trans-unit>             
+             <trans-unit id="label.red" xml:space="preserve">
+                   <source>Red</source>
+                   <target state="translated">Rot</target>  
+            </trans-unit>             
+                       
+
+            /* Misc classes */
+            <trans-unit id="label.none" xml:space="preserve">
+                <source>none</source>
+                <target state="translated">keine</target>
+            </trans-unit>
+            <trans-unit id="label.yes" xml:space="preserve">
+                <source>yes</source>
+                <target state="translated">Ja</target>
+            </trans-unit>
+            <trans-unit id="label.no" xml:space="preserve">
+                <source>no</source>
+                <target state="translated">nein</target>
+            </trans-unit>
+ 
+        </body>
+    </file>
+</xliff>        

@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<f:variable name="hs" value="h{flexFormData.headersize}" />
+ 
+    <div id="c{data.uid}" class="frame-{data.CType} d-flex flex-column justify-content-{flexFormData.valign} align-items-{flexFormData.textalign} {flexFormData.color} {flexFormData.bgcolor}Bg {f:if(condition: data.animate, then: 'aos-init')}"
+         {f:if(condition: data.animate, then: 'data-aos="{data.animate}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_duration}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_easing}"')} {f:if(condition: data.animate, then: 'data-aos-delay="{data.animate_delay}"')}>
+        <f:link.typolink parameter="{data.header_link}">
+          	<span class="d-block {hs} m-0 "><f:format.nl2br>{data.header}</f:format.nl2br></span>
+          	<f:if condition="{data.subheader}">
+          	    <span><f:format.nl2br>{data.subheader}</f:format.nl2br></span>
+          	</f:if>
+        </f:link.typolink>
+    </div>
+</html>
