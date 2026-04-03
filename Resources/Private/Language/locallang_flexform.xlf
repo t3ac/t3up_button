@@ -163,7 +163,23 @@
             </trans-unit>  
            
             
-               /* Buttons */           
+               /* Buttons */      
+               
+             <trans-unit id="label.symbolheadertextposition" xml:space="preserve">
+                 <source>Position of the text</source>
+            </trans-unit>                     
+               
+             <trans-unit id="label.symbolwidth" xml:space="preserve">
+                 <source>Width of the symbol in %</source>
+            </trans-unit>                                 
+             <trans-unit id="label.symbolcolor" xml:space="preserve">
+                 <source>Color of the symbol</source>
+            </trans-unit>                                 
+                        
+             <trans-unit id="label.flexposition" xml:space="preserve">
+                 <source>Position of the symbol</source>
+            </trans-unit>                                 
+
              <trans-unit id="label.textalign" xml:space="preserve">
                  <source>Textalign</source>
             </trans-unit>    

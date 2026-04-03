@@ -2,17 +2,17 @@
 
 	<f:variable name="hs" value="h{flexFormData.headersize}" />
  
-    <div id="c{data.uid}" class="frame-{data.CType} d-flex {flexFormData.flexposition} align-items-center {flexFormData.color} {flexFormData.bgcolor}Bg {f:if(condition: data.animate, then: 'aos-init')} 
+    <div id="c{data.uid}" class="frame-{data.CType} d-flex align-items-{flexFormData.flexposition} {flexFormData.color} {flexFormData.bgcolor}Bg {f:if(condition: data.animate, then: 'aos-init')} 
     <f:if condition="{flexFormData.textposition} == '1'">flex-wrap</f:if>
     <f:if condition="{flexFormData.textposition} == '2'">flex-row-reverse</f:if>    
     <f:if condition="{flexFormData.textposition} == '3'">flex-nowrap</f:if>
     <f:if condition="{flexFormData.textposition} == '4'">flex-wrap-reverse</f:if>"
         {f:if(condition: data.animate, then: 'data-aos="{data.animate}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_duration}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_easing}"')} {f:if(condition: data.animate, then: 'data-aos-delay="{data.animate_delay}"')}>
             <f:link.typolink parameter="{data.header_link}">
-                <span class="symbol w-100 d-block {hs} m-0 text-center px-5"><f:format.nl2br>{data.subheader}</f:format.nl2br></span>
+                <span class="symbol w-{flexFormData.symbolwidth} d-block {hs} m-0 text-center px-5 {flexFormData.symbolcolor}"><f:format.nl2br>{data.subheader}</f:format.nl2br></span>
              </f:link.typolink>
              <f:if condition="{flexFormData.textposition}">
-	            <div class="px-5">
+	            <div class="px-5 ">
 		            <f:format.nl2br><p class="text-align-{data.header_position}"><b>{data.header}</b><br></p></f:format.nl2br>
 		            <f:format.nl2br><p class="text-align-{data.header_position}">{data.bodytext}</p></f:format.nl2br>
 	            </div>

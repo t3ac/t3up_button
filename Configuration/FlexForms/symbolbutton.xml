@@ -55,8 +55,134 @@
                             <default>5</default>
                         </config>
                     </headersize>
+                    <symbolwidth>
+                        <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.symbolwidth</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0" type="array">
+                                    <label>Auto</label>
+                                    <value>auto</value>
+                                </numIndex>                 
+                                <numIndex index="1" type="array">
+                                    <label>10</label>
+                                    <value>10</value>
+                                </numIndex> 
+                                <numIndex index="2" type="array">
+                                    <label>20</label>
+                                    <value>20</value>
+                                </numIndex> 
+                                <numIndex index="3" type="array">
+                                    <label>30</label>
+                                    <value>30</value>
+                                </numIndex>    
+                                <numIndex index="4" type="array">
+                                    <label>40</label>
+                                    <value>40</value>
+                                </numIndex>        
+                                <numIndex index="5" type="array">
+                                    <label>50</label>
+                                    <value>50</value>
+                                </numIndex> 
+                                <numIndex index="6" type="array">
+                                    <label>60</label>
+                                    <value>60</value>
+                                </numIndex> 
+                                <numIndex index="7" type="array">
+                                    <label>70</label>
+                                    <value>70</value>
+                                </numIndex>    
+                                <numIndex index="8" type="array">
+                                    <label>80</label>
+                                    <value>80</value>
+                                </numIndex>                                        
+                                <numIndex index="9" type="array">
+                                    <label>90</label>
+                                    <value>90</value>
+                                </numIndex>    
+                                <numIndex index="10" type="array">
+                                    <label>100</label>
+                                    <value>100</value>
+                                </numIndex>                                                                
+                            </items>
+                            <default>100</default>
+                        </config>
+                    </symbolwidth>    
+                    
+                    <symbolcolor>
+                        <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.symbolcolor</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                              <items>
+                                <numIndex index="0">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.none</label>
+                                    <value>transparent</value>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.basecolor</label>
+                                    <value>BaseColor</value>
+                                </numIndex>
+                                <numIndex index="2">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.white</label>
+                                    <value>White</value>
+                                </numIndex>
+                                <numIndex index="3">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.lightgrey</label>
+                                    <value>Lightgrey</value>
+                                </numIndex>
+                                <numIndex index="4">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.grey</label>
+                                    <value>Grey</value>
+                                </numIndex>  
+                                <numIndex index="5">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.darkergrey</label>
+                                    <value>Darkergrey</value>
+                                </numIndex>
+                                <numIndex index="6">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.darkgrey</label>
+                                    <value>Darkgrey</value>
+                                </numIndex> 
+                                <numIndex index="7">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.black</label>
+                                    <value>Black</value>
+                                </numIndex> 
+                                <numIndex index="8">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.blue</label>
+                                    <value>Blue</value>
+                                </numIndex>
+                                <numIndex index="9">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.darkblue</label>
+                                    <value>Darkblue</value>
+                                </numIndex>        
+                                <numIndex index="10">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.turquoise</label>
+                                    <value>Turquoise</value>
+                                </numIndex>        
+                                <numIndex index="11">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.green</label>
+                                    <value>Green</value>
+                                </numIndex>                                                                 
+                                <numIndex index="12">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.violett</label>
+                                    <value>Violett</value>
+                                </numIndex>         
+                                <numIndex index="12">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.orange</label>
+                                    <value>Orange</value>
+                                </numIndex>    
+                                <numIndex index="13">
+                                    <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.red</label>
+                                    <value>Red</value>
+                                </numIndex>                    
+                            </items>
+                            <default>Black</default>
+                        </config>
+                    </symbolcolor>
+                    
                     <textposition>
-                        <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.symbolheadersize</label>
+                        <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.symbolheadertextposition</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingle</renderType>
@@ -85,6 +211,33 @@
                             <default></default>
                         </config>
                     </textposition>
+                    <flexposition>
+                        <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.flexposition</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0" type="array">
+                                    <label>Center</label>
+                                    <value>center</value>
+                                </numIndex>                 
+                                <numIndex index="1" type="array">
+                                    <label>Start</label>
+                                    <value>start</value>
+                                </numIndex> 
+                                <numIndex index="2" type="array">
+                                    <label>End</label>
+                                    <value>end</value>
+                                </numIndex> 
+                                <numIndex index="3" type="array">
+                                    <label>Baseline</label>
+                                    <value>baseline</value>
+                                </numIndex>                                         
+                            </items>
+                            <default>center</default>
+                        </config>
+                    </flexposition>
+                    
                     <color>
                         <label>LLL:EXT:t3up_button/Resources/Private/Language/locallang_flexform.xlf:label.color</label>
                         <config type="array">

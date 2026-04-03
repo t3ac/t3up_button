@@ -19,7 +19,7 @@ call_user_func(static function () {
    ); 
     
     $iconRegistry->registerIcon(
-        'imagebutton_icon',
+        'symbolbutton_icon',
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
         ['source' => 'EXT:t3up_button/Resources/Public/Icons/symbolbutton_icon.svg']
         ); 
