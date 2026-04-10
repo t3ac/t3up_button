@@ -87,6 +87,7 @@
         &.Item4,
         &.Item5,
         &.Item6{
+            > div                                                       {width: $c50;}           
             &.spacing1  > div                                           {width: calc(#{$c50}  - #{$v01});}
             &.spacing2  > div                                           {width: calc(#{$c50}  - #{$v02});}
             &.spacing3  > div                                           {width: calc(#{$c50}  - #{$v03});}
@@ -128,6 +129,7 @@
         &.Item4,
         &.Item5,
         &.Item6{
+            > div                                                       {width: $c33;}            
             &.spacing1  > div                                           {width: calc(#{$c33}  - #{$v02});}
             &.spacing2  > div                                           {width: calc(#{$c33}  - #{$v03});}
             &.spacing3  > div                                           {width: calc(#{$c33}  - #{$v04});}
@@ -169,6 +171,7 @@
         &.Item4,
         &.Item5,
         &.Item6{
+            > div                                                       {width: $c25;}            
             &.spacing1  > div                                           {width: calc(#{$c25}  - #{$v02});}
             &.spacing2  > div                                           {width: calc(#{$c25}  - #{$v03});}
             &.spacing3  > div                                           {width: calc(#{$c25}  - #{$v05});}
@@ -208,6 +211,7 @@
             }
         }
         &.Item5{
+            > div                                                       {width: $c20;}            
             &.spacing1  > div                                           {width: calc(#{$c20}  - #{$v02});}
             &.spacing2  > div                                           {width: calc(#{$c20}  - #{$v04});}
             &.spacing3  > div                                           {width: calc(#{$c20}  - #{$v05});}
@@ -226,6 +230,7 @@
             }  
         }
         &.Item6{
+            > div                                                       {width: $c16;}            
             &.spacing1  > div                                           {width: calc(#{$c16}  - #{$v02});}
             &.spacing2  > div                                           {width: calc(#{$c16}  - #{$v04});}
             &.spacing3  > div                                           {width: calc(#{$c16}  - #{$v05});}
