@@ -6,8 +6,7 @@
 
 	<f:section name="Main">
 
-		<div class="containerbuttons d-flex w-100 align-items-stretch Item{flexFormData.items} {f:if(condition: flexFormData.spacing, then: 'spacing{flexFormData.spacing}')} {f:if(condition: flexFormData.format, then: '{flexFormData.format}')} 	{flexFormData.bordercolor}Bd round{flexFormData.round}" 
-		style="{bo}">	
+		<div class="containerbuttons d-flex w-100 align-items-stretch Item{flexFormData.items} {f:if(condition: flexFormData.spacing, then: 'spacing{flexFormData.spacing}')} {f:if(condition: flexFormData.format, then: '{flexFormData.format}')} {f:if(condition: flexFormData.bordercolor, then: '{flexFormData.bordercolor}Bd')} {f:if(condition:'{flexFormData.round} = true', then: 'round{flexFormData.round}')}" style="{bo}">	
 		
 			<f:for each="{childrenContent}" as="child" iteration="iterator">
 				<f:format.raw>{child.renderedContent}</f:format.raw>
