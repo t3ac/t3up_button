@@ -4,6 +4,17 @@ page.includeCSS {
     button = EXT:t3up_button/Resources/Public/Sass/_button.scss
 }
 
+plugin.tx_wsscss.variables{
+	symbolwidth							   = {$t3upButton.symbolwidth}
+	symbolsize							   = {$t3upButton.symbolsize}
+	symboltextweight					       = {$t3upButton.symboltextweight}
+	symboltextsize						   = {$t3upButton.symboltextsize}	
+	imagesize							   = {$t3upButton.imagesize}
+	imagewidth							   = {$t3upButton.imagewidth}
+	imageweight							   = {$t3upButton.imageweight}	
+	textwidth							   = {$t3upButton.textwidth}		
+	
+}
 
 ## Buttons ------------------------------------------------------------------------
 
@@ -11,38 +22,57 @@ tt_content.headerbutton =< lib.contentElement
 tt_content.headerbutton {
     templateName = Headerbutton
     templateRootPaths.0 = EXT:t3up_button/Resources/Private/Templates    
-      dataProcessing {
-        999 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
-     }
+    
+    dataProcessing {
+	    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+	    10 {
+	            fieldName = pi_flexform
+	            as = flexFormData
+	    }
+   }
+   
 }
 
 tt_content.symbolbutton =< lib.contentElement
 tt_content.symbolbutton {
     templateName = Symbolbutton
     templateRootPaths.0 = EXT:t3up_button/Resources/Private/Templates
+    
+    
     dataProcessing {
-        999 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+	    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+	    10 {
+	            fieldName = pi_flexform
+	            as = flexFormData
+	    }
    }
 }
+
 
 
 tt_content.imagebutton =< lib.contentElement
 tt_content.imagebutton {
     templateName = Imagebutton
     templateRootPaths.0 = EXT:t3up_button/Resources/Private/Templates
+    
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         10 {
             references.fieldName = assets
             as = image
-        }
-        999 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+	    }
+	    30 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+	    30 {
+	            fieldName = pi_flexform
+	            as = flexFormData
+	    }
    }
 }
 
 ## Buttons
 tt_content.buttons =< lib.contentElement
 tt_content.buttons {
+    
   templateName = Buttons
     templateRootPaths.0 = EXT:t3up_button/Resources/Private/Templates
 
@@ -52,7 +82,16 @@ tt_content.buttons {
       colPos = 101
       as = childrenContent
     }
-    999 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
     
+    20 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+    20 {
+        as = site
+    }
+    
+    30 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+    30 {
+            fieldName = pi_flexform
+            as = flexFormData
+    }
   }
 }

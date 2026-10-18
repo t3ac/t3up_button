@@ -4,7 +4,11 @@ declare(strict_types = 1);
 defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
 (static function (): void {
+    
+    $frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
+    
     $typeList = 'buttons';
+  
     // Remove header field
     foreach (\TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(',', $typeList, true) as $type) {
         $showitem = $GLOBALS['TCA']['tt_content']['types'][$type]['showitem'];
@@ -17,7 +21,7 @@ defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
     // Add headers palette and container options (pi_flexform)
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'tt_content',
-        '--palette--;;headers, --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:container,pi_flexform;LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:options',
+        '--palette--;;headers, --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:container,pi_flexform;LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:options',
         $typeList,
         'after:tx_container_parent'
     );

@@ -112,6 +112,13 @@
              <trans-unit id="label.8items" xml:space="preserve">
                  <source>Eight Items</source>
             </trans-unit>     
+             <trans-unit id="label.9items" xml:space="preserve">
+                 <source>nine Items</source>
+            </trans-unit>           
+             <trans-unit id="label.10items" xml:space="preserve">
+                 <source>Ten Items</source>
+            </trans-unit>                 
+            
             <trans-unit id="label.interspace" xml:space="preserve">
                  <source>Interspace (default: 10 i.e. 1.0vw)</source>
             </trans-unit> 
@@ -163,8 +170,35 @@
             </trans-unit>  
            
             
-               /* Buttons */      
-               
+               /* Buttons */  
+             <trans-unit id="label.align" xml:space="preserve">
+                 <source>Alignment of the buttons.</source>
+            </trans-unit>                
+             <trans-unit id="label.align0" xml:space="preserve">
+                 <source>left</source>
+            </trans-unit>                
+             <trans-unit id="label.align1" xml:space="preserve">
+                 <source>right</source>
+            </trans-unit>                
+             <trans-unit id="label.align2" xml:space="preserve">
+                 <source>center</source>
+            </trans-unit>                
+             <trans-unit id="label.align3" xml:space="preserve">
+                 <source>Space between</source>
+            </trans-unit>                
+             <trans-unit id="label.align4" xml:space="preserve">
+                 <source>Space around</source>
+            </trans-unit>                
+             <trans-unit id="label.align5" xml:space="preserve">
+                 <source>Same space between</source>
+            </trans-unit>                
+                                      
+                   
+                   
+             <trans-unit id="label.padding" xml:space="preserve">
+                 <source>Padding of the button.</source>
+            </trans-unit>  
+                         
              <trans-unit id="label.symbolheadertextposition" xml:space="preserve">
                  <source>Position of the text</source>
             </trans-unit>                     

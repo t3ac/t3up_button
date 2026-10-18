@@ -1,58 +1,99 @@
 <?php
 
+defined('TYPO3') || die('Access denied.');
+
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
-defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
+$frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
 
-// Get extension configuration
-$extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
-);
-
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['headerbutton']   =  'headerbutton_icon';
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['imagebutton']    =  'imagebutton_icon';
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['symbolbutton']   =  'symbolbutton_icon';
-
-
-
-// Add to content type dropdown
-ExtensionManagementUtility::addTcaSelectItem(
-    "tt_content",
-    "CType",
-    ['Headerbutton', 'headerbutton', 'headerbutton_icon', 'container'],
-    'tabs',
-    'after'
+ExtensionManagementUtility::addRecordType(
+    [
+        'label' => 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:headerbutton.title',
+        'value' => 'headerbutton',
+        'icon' => 'headerbutton_icon',
+        'group' => 'container',
+        'description' => 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:headerbutton.description',
+    ],
+    
+    '   --palette--;
+        ' . $frontendLanguageFilePrefix . 'palette.general;general,
+        header,header_link,bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+        --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:headerbutton.flexvalues, pi_flexform,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,space_after_class,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+        --palette--;;language,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+        --palette--;;hidden,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+    ',
     );
 
-ExtensionManagementUtility::addTcaSelectItem(
-    "tt_content",
-    "CType",
-    ['Symbolbutton', 'symbolbutton', 'symbolbutton_icon', 'container'],
-    'tabs',
-    'after'
-    );
-
-ExtensionManagementUtility::addTcaSelectItem(
-    "tt_content",
-    "CType",
-    ['Imagebutton', 'imagebutton', 'imagebutton_icon', 'container'],
-    'tabs',
-    'after'
-    );
-
-// Add a flexform to the the CTypes
+// Add a flexform 
 ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:t3up_button/Configuration/FlexForms/headerbutton.xml',
     'headerbutton'
     );
 
+ExtensionManagementUtility::addRecordType(
+    [
+        'label' => 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:symbolbutton.title',
+        'value' => 'symbolbutton',
+        'icon' => 'symbolbutton_icon',
+        'group' => 'container',
+        'description' => 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:symbolbutton.description',
+    ],
+    
+    '   --palette--;
+        ' . $frontendLanguageFilePrefix . 'palette.general;general,
+        header,header_link,bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+        --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:symbolbutton.flexvalues, pi_flexform,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,space_after_class,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+        --palette--;;language,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+        --palette--;;hidden,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+    ',
+    );
+
+// Add a flexform 
 ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:t3up_button/Configuration/FlexForms/symbolbutton.xml',
     'symbolbutton'
     );
 
+ExtensionManagementUtility::addRecordType(
+    [
+        'label' => 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:imagebutton.title',
+        'value' => 'imagebutton',
+        'icon' => 'imagebutton_icon',
+        'group' => 'container',
+        'description' => 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:imagebutton.description',
+    ],
+    
+    '   --palette--;
+        ' . $frontendLanguageFilePrefix . 'palette.general;general,
+        header,header_link,
+        assets,
+                    overlayfunction,
+        --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:symbolbutton.flexvalues, pi_flexform,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,space_after_class,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+        --palette--;;language,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+        --palette--;;hidden,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+    ',
+    );
+
+// Add a flexform 
 ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:t3up_button/Configuration/FlexForms/imagebutton.xml',
@@ -60,126 +101,3 @@ ExtensionManagementUtility::addPiFlexFormValue(
     );
 
 
-$GLOBALS['TCA']['tt_content']['types']['headerbutton']=[
-    'showitem' => '
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-            header,
-            header_link,
-            subheader,
-  	    --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:headerbutton.flexvalues, pi_flexform,
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-            --palette--;;appearanceLinks,animate,animate_duration,animate_easing,animate_delay,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
-            --palette--;;language,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-            --palette--;;hidden,
-            --palette--;;access,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
-            rowDescription,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-            ',
-    'columnsOverrides' => [
-        'header' => [
-            'l10n_mode' => 'prefixLangTitle',
-            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header',
-            'config' => [
-                'type' => 'input',
-                'size' => 50,
-                'max' => 80,
-            ]
-        ],
-    ]
-];
-
-$GLOBALS['TCA']['tt_content']['types']['symbolbutton']=[
-    'showitem' => '
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-            subheader,
-            header_link,
-            header,
-            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-            header_position,
-  	    --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:headerbutton.flexvalues, pi_flexform,
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-            --palette--;;appearanceLinks,animate,animate_duration,animate_easing,animate_delay,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
-            --palette--;;language,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-            --palette--;;hidden,
-            --palette--;;access,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
-            rowDescription,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-            ',
-    'columnsOverrides' => [
-        'header' => [
-            'l10n_mode' => 'prefixLangTitle',
-            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'max' => 40,
-            ]
-        ],
-        'subheader' => [
-            'l10n_mode' => 'prefixLangTitle',
-            'label' => 'Symbol siehe https://fonts.google.com/icons?query=symbol',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'max' => 40,
-            ]
-        ],
-        'bodytext' => [
-            'l10n_mode' => 'prefixLangTitle',
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text',
-            'config' => [
-                'enableRichtext' => false,
-                'rows' => 2,
-                'max' => 120,
-            ]
-        ],
-    ]
-];
-
-
-$GLOBALS['TCA']['tt_content']['types']['imagebutton']=[
-    'showitem' => '
-                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                    header,
-                    header_link,
-                    bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-                    assets,
-                    overlayfunction,
-        		    --div--;LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:headerbutton.flexvalues, pi_flexform,
-                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-                --palette--;;appearanceLinks,animate,animate_duration,animate_easing,animate_delay,
-                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
-                    --palette--;;language,
-                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-                    --palette--;;hidden,
-                    --palette--;;access,
-                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
-                    categories,
-                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
-                    rowDescription,
-                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-            ',
-    'columnsOverrides' => [
-        'bodytext' => [
-            'l10n_mode' => 'prefixLangTitle',
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text',
-            'config' => [
-                'enableRichtext' => false,
-                'rows' => 2,
-                'max' => 120,
-            ]
-        ],
-        'assets' => [
-            'config' => [
-                'maxitems' => '1',
-                'minitems' => '1'
-            ]
-        ],
-    ]
-];

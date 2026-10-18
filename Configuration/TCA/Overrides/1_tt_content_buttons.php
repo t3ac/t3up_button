@@ -15,7 +15,7 @@ defined('TYPO3') or die('Access denied.');
      * Register buttons
      */
     
-    $L = 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_backend.xlf:'; 
+    $L = 'LLL:EXT:t3up_button/Resources/Private/Language/locallang_db.xlf:'; 
     
     \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
         (
@@ -25,13 +25,12 @@ defined('TYPO3') or die('Access denied.');
                 $L.'buttonsDes',
                 [
                     [
-                        ['name' => $L.'center', 'colPos' => 101, 'allowed' => ['CType' => 'headerbutton,symbolbutton,imagebutton']],
+                        ['name' => 'Content', 'colPos' => 101, 'allowed' => ['CType' => 'headerbutton,symbolbutton,imagebutton']],
                     ]
                 ]
                 )
             )
         ->setIcon('EXT:t3up_button/Resources/Public/Icons/gridlayout_buttons.svg')
-        ->setBackendTemplate('EXT:t3up_button/Resources/Private/Backend/Backend.html')
         ->setSaveAndCloseInNewContentElementWizard(true)
         );
     
